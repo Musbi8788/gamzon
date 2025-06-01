@@ -1,0 +1,279 @@
+{% include "header.html" %}
+
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+  <div class="py-5">
+    <h1 class="display-5 fw-bold text-white">Dark color hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4">
+        Quickly design and customize responsive mobile-first sites with
+        Bootstrap, the world’s most popular front-end open source toolkit,
+        featuring Sass variables and mixins, responsive grid system, extensive
+        prebuilt components, and powerful JavaScript plugins.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Cards -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card contact-card h-100 text-center p-4">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Call Us</h5>
+          <p class="text-muted mb-2">Mon-Fri 9AM-6PM</p>
+          <a href="tel:+1234567890" class="text-decoration-none fw-semibold"
+            >+1 (234) 567-8900</a
+          >
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card contact-card h-100 text-center p-4">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Email Us</h5>
+          <p class="text-muted mb-2">We'll respond within 24 hours</p>
+          <a
+            href="mailto:hello@yourstore.com"
+            class="text-decoration-none fw-semibold"
+            >hello@yourstore.com</a
+          >
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card contact-card h-100 text-center p-4">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h5 class="fw-bold mb-3">Visit Us</h5>
+          <p class="text-muted mb-2">Our main office</p>
+          <address class="mb-0 fw-semibold">
+            123 Business Ave<br />New York, NY 10001
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form & Info -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="card contact-card p-4">
+          <h2 class="section-title text-center">Send us a Message</h2>
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label fw-semibold"
+                  >First Name *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label fw-semibold"
+                  >Last Name *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold"
+                  >Email Address *</label
+                >
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label fw-semibold"
+                  >Phone Number</label
+                >
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label fw-semibold"
+                  >Subject *</label
+                >
+                <select class="form-select" id="subject" required>
+                  <option value="">Choose a subject...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Customer Support</option>
+                  <option value="orders">Order Issues</option>
+                  <option value="returns">Returns & Refunds</option>
+                  <option value="partnership">Business Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold"
+                  >Message *</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us how we can help you..."
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter"
+                  />
+                  <label class="form-check-label" for="newsletter">
+                    Subscribe to our newsletter for updates and offers
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-lg-4">
+        <div class="card contact-card p-4 h-100">
+          <h3 class="mb-4">Contact Information</h3>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Business Hours</h6>
+              <small class="text-muted"
+                >Mon-Fri: 9:00 AM - 6:00 PM<br />Sat: 10:00 AM - 4:00 PM<br />Sun:
+                Closed</small
+              >
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Customer Support</h6>
+              <small class="text-muted"
+                >24/7 online chat available<br />Response time: &lt; 2
+                hours</small
+              >
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Order Support</h6>
+              <small class="text-muted"
+                >Track orders, returns<br />Shipping inquiries</small
+              >
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-primary rounded-circle"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Find Our Location</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1635180894999!5m2!1sen!2sus"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      >
+      </iframe>
+    </div>
+  </div>
+</section>
+
+{% include "footer.html" %}
